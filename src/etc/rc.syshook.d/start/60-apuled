@@ -9,10 +9,10 @@ LED3="/dev/led/led3"
 LEDKO="/usr/local/etc/apuled/module/apuled.ko"
 
 # Load module
-kldload $LEDKO
+kldload $LEDKO 2>&1
 
 # Test if LED exists
-if [ ! -f "$LED1" ];then
+if [ ! -e "$LED1" ];then
   echo "Error: Module appears not be correctly loaded"
   exit 0
 fi
