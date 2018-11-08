@@ -1,0 +1,1 @@
+sh /usr/local/etc/rc.syshook.d/start/60-apuled
