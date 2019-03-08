@@ -5,26 +5,7 @@ LED1="/dev/led/led1"
 LED2="/dev/led/led2"
 LED3="/dev/led/led3"
 
-# LED Module path
-LEDKO="/usr/local/etc/apuled/module/apuled.ko"
-
-# Load module
-kldload $LEDKO 2>&1
-
-# Test if LED exists
-if [ ! -e "$LED1" ];then
-  echo "Error: Module appears not be correctly loaded"
-  exit 0
-fi
-
-# make the initial test
-echo m. > $LED1
-echo m.. > $LED2
-echo m... > $LED3
-
-sleep 5
-
-# light all LEDs
+#stop blinking PWR LED
 echo 1 > $LED1
 echo 1 > $LED2
 echo 1 > $LED3

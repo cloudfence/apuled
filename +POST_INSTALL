@@ -1,1 +1,3 @@
-sh /usr/local/etc/rc.syshook.d/start/60-apuled
+chmod +x /usr/local/etc/rc.syshook.d/early/30-apuled
+chmod +x /usr/local/etc/rc.syshook.d/start/60-apuled
+chmod +x /usr/local/opnsense/scripts/apuled/apuledctl
