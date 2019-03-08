@@ -35,6 +35,7 @@ sleep 2
 echo 1 > $LED1
 echo 1 > $LED2
 echo 1 > $LED3
+sleep 2
 # PWR bliking to show booting state
 echo "f6" > $LED1
 echo 0 > $LED2
