@@ -5,3 +5,13 @@ chmod +x /usr/local/opnsense/scripts/apuled/apuledctl
 # reload
 /usr/local/etc/rc.configure_plugins
 service configd restart
+
+# starting boot LED message
+# make the initial test
+echo "m-" > $LED1
+echo "m -" > $LED2
+echo "m  -" > $LED3
+sleep 2
+echo 1 > $LED1
+echo 1 > $LED2
+echo 1 > $LED3
