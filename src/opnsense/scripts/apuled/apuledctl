@@ -71,7 +71,7 @@ CHK_IDLE=$(vmstat 1 2 | tail -1 | awk '{ print $19 }')
 if [ "$CHK_IDLE" -lt "10"  ];then
     echo "f4" > $LED1
 else
-    echo "1" > $LED1
+    echo "sAbAj" > $LED1
 fi
 }
 
